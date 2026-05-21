@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://yufha3sb8vpg"]
+
+[node name="CBox" type="CheckBox" unique_id=2087299649]
+size_flags_horizontal = 3

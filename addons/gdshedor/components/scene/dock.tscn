@@ -1,0 +1,371 @@
+[gd_scene format=3 uid="uid://lh601asy3xac"]
+
+[ext_resource type="Script" uid="uid://cmqerlducif88" path="res://addons/gdshedor/components/scene/m_dock.gd" id="1_i7obb"]
+[ext_resource type="PackedScene" uid="uid://yufha3sb8vpg" path="res://addons/gdshedor/components/scene/c_box.tscn" id="2_et4yt"]
+
+[node name="GDShedor" type="VBoxContainer" unique_id=377056684 node_paths=PackedStringArray("toolbox", "process_export_check", "obfuscate_symbols_check", "strip_commentary_check", "strip_lines_check", "remove_unused_uniforms_check", "remove_unused_functions_check", "replace_constants_check", "target_obfuscation_length", "header_text_edit", "footer_text_Edit", "prefix_line", "custom_names_path", "custom_locked_path", "select_file_uniforms", "select_file_locked", "no_test_check_button", "no_preserve_shaderinc", "enable_custom_symbol_names", "enable_custom_locked_names", "embed_shadering", "custom_seed", "reset_button")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_i7obb")
+toolbox = NodePath("C2/C0/C0")
+process_export_check = NodePath("C2/C0/C37")
+obfuscate_symbols_check = NodePath("C2/C0/C4")
+strip_commentary_check = NodePath("C2/C0/C10")
+strip_lines_check = NodePath("C2/C0/C11")
+remove_unused_uniforms_check = NodePath("C2/C0/C14")
+remove_unused_functions_check = NodePath("C2/C0/C15")
+replace_constants_check = NodePath("C2/C0/C16")
+target_obfuscation_length = NodePath("C2/C0/CX/C2")
+header_text_edit = NodePath("C2/C0/C19")
+footer_text_Edit = NodePath("C2/C0/C22")
+prefix_line = NodePath("C2/C0/C6")
+custom_names_path = NodePath("C2/C0/C25")
+custom_locked_path = NodePath("C2/C0/C29")
+select_file_uniforms = NodePath("C2/C0/C26")
+select_file_locked = NodePath("C2/C0/C30")
+no_test_check_button = NodePath("C2/C0/C33")
+no_preserve_shaderinc = NodePath("C2/C0/C34")
+enable_custom_symbol_names = NodePath("C2/C0/C38")
+enable_custom_locked_names = NodePath("C2/C0/C39")
+embed_shadering = NodePath("C2/C0/C40")
+custom_seed = NodePath("C2/C0/CX/C0")
+reset_button = NodePath("C2/C0/C41")
+
+[node name="ver" type="Label" parent="." unique_id=1228090686]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "GDShedor v1.0"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="C1" type="HSeparator" parent="." unique_id=206774283]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C2" type="ScrollContainer" parent="." unique_id=794124524]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="C0" type="GridContainer" parent="C2" unique_id=1037518893]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+
+[node name="C0" type="Button" parent="C2/C0" unique_id=877828041]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Open ToolBox"
+
+[node name="C1" type="HSeparator" parent="C2/C0" unique_id=1449786622]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C2" type="Label" parent="C2/C0" unique_id=1409018453]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Obfuscation"
+horizontal_alignment = 1
+
+[node name="C4" parent="C2/C0" unique_id=716659795 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "Replace all symbols for hard of read symbols."
+button_pressed = true
+text = "Obfuscate Symbols"
+
+[node name="C5" type="Label" parent="C2/C0" unique_id=713751688]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "PREFIX"
+horizontal_alignment = 1
+vertical_alignment = 2
+uppercase = true
+
+[node name="C6" type="LineEdit" parent="C2/C0" unique_id=985301785]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "File for custom obfuscation of symbols."
+placeholder_text = "Prefix of obfuscation symbols"
+alignment = 1
+
+[node name="CX" type="GridContainer" parent="C2/C0" unique_id=1495099230]
+layout_mode = 2
+columns = 2
+
+[node name="C0" type="SpinBox" parent="C2/C0/CX" unique_id=538915637]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+size_flags_horizontal = 3
+rounded = true
+allow_greater = true
+allow_lesser = true
+alignment = 2
+
+[node name="C1" type="Label" parent="C2/C0/CX" unique_id=824867608]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Seed"
+
+[node name="C2" type="SpinBox" parent="C2/C0/CX" unique_id=1397739036]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+value = 5.0
+alignment = 2
+
+[node name="C3" type="Label" parent="C2/C0/CX" unique_id=1128849950]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Obfuscation Target Length"
+
+[node name="C8" type="HSeparator" parent="C2/C0" unique_id=2093984642]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C9" type="Label" parent="C2/C0" unique_id=383972880]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Strip"
+horizontal_alignment = 1
+
+[node name="C10" parent="C2/C0" unique_id=1189054335 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "Remove all commentaries."
+text = "Strip Comments"
+
+[node name="C11" parent="C2/C0" unique_id=1696279042 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "Try make all code inline."
+text = "Strip Lines"
+
+[node name="C12" type="HSeparator" parent="C2/C0" unique_id=2028988619]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C13" type="Label" parent="C2/C0" unique_id=566573679]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Optimizations"
+horizontal_alignment = 1
+
+[node name="C14" parent="C2/C0" unique_id=193080503 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "All unused uniforms by the mains functions of the gpu shader, will be removed.
+
+Put true only if you are secure of you not use orphan uniforms in scripts."
+text = "Remove unused uniforms"
+
+[node name="C15" parent="C2/C0" unique_id=2008102205 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "Any function unsued on main functions by shader will be remove."
+text = "Remove unused functions"
+
+[node name="C16" parent="C2/C0" unique_id=1240352855 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "All constant values used are remplaced by the value."
+text = "Replace constants"
+
+[node name="C17" type="HSeparator" parent="C2/C0" unique_id=1487696260]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C18" type="Label" parent="C2/C0" unique_id=311615547]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Custom Header"
+horizontal_alignment = 1
+vertical_alignment = 2
+uppercase = true
+
+[node name="C19" type="TextEdit" parent="C2/C0" unique_id=448029543]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+custom_minimum_size = Vector2(50, 150)
+layout_mode = 2
+tooltip_text = "Allow put you custom message on top of the shader."
+placeholder_text = "You custom header
+
+Example:
+My Original Sweet Shader.
+Created by Twister."
+
+[node name="C20" type="HSeparator" parent="C2/C0" unique_id=596984872]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C21" type="Label" parent="C2/C0" unique_id=1283070965]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Custom Footer"
+horizontal_alignment = 1
+vertical_alignment = 2
+uppercase = true
+
+[node name="C22" type="TextEdit" parent="C2/C0" unique_id=1580119557]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+custom_minimum_size = Vector2(50, 150)
+layout_mode = 2
+tooltip_text = "Allow put you custom message on bottom of the shader."
+placeholder_text = "You custom footer.
+
+Example:
+Credits https://github.com/CodeNameTwister"
+
+[node name="C23" type="HSeparator" parent="C2/C0" unique_id=376088667]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C24" type="Label" parent="C2/C0" unique_id=6544131]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Custom Obfuscated Names File Path"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="C38" parent="C2/C0" unique_id=2087299649 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "All constant values used are remplaced by the value."
+text = "Enable use custom names file"
+
+[node name="C25" type="LineEdit" parent="C2/C0" unique_id=528393610]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "File for custom obfuscation of symbols.
+
+work as [key value]
+must be separate by empty space
+
+example:
+
+my_special_var my_custom_token
+my_special_function x_function
+my_class_name classX"
+text = "res://addons/gdshedor/user/custom_uniform_names.txt"
+placeholder_text = "You file path of custom symbols."
+editable = false
+
+[node name="C26" type="Button" parent="C2/C0" unique_id=1893880491]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Select"
+
+[node name="C27" type="HSeparator" parent="C2/C0" unique_id=938905991]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C28" type="Label" parent="C2/C0" unique_id=487990885]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Locked Names"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="C39" parent="C2/C0" unique_id=447761806 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "All constant values used are remplaced by the value."
+text = "Enable use locked names file"
+
+[node name="C29" type="LineEdit" parent="C2/C0" unique_id=95219102]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "File for custom locked symbols.
+
+Example:
+
+my_special_var
+my_another_var
+an_function
+an_class_name
+any_id_name"
+text = "res://addons/gdshedor/user/custom_locked_symbols.txt"
+placeholder_text = "You file path of names what not be obfuscate."
+editable = false
+
+[node name="C30" type="Button" parent="C2/C0" unique_id=1649234129]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Select"
+
+[node name="C35" type="HSeparator" parent="C2/C0" unique_id=162389844]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C36" type="Label" parent="C2/C0" unique_id=1437706313]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Export"
+horizontal_alignment = 1
+
+[node name="C37" parent="C2/C0" unique_id=1114450299 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "Process all shaders on export (all options be include in the process)"
+text = "Process on Export"
+
+[node name="C31" type="HSeparator" parent="C2/C0" unique_id=1812691943]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+
+[node name="C32" type="Label" parent="C2/C0" unique_id=1591072135]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+text = "Others"
+horizontal_alignment = 1
+
+[node name="C33" parent="C2/C0" unique_id=2048624474 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "No show error if any syntax fail on the process."
+text = "No test check"
+
+[node name="C34" parent="C2/C0" unique_id=1091914467 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "This force to use configuration.
+
+Warn: if true, that can delete any helper function and uniforms in shaderinc."
+text = "No preserve shaderinc"
+
+[node name="C40" parent="C2/C0" unique_id=2056206470 instance=ExtResource("2_et4yt")]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "It will attempt to embed the contents of the include in the shader that requests it."
+text = "Require embed shadering"
+
+[node name="C41" type="Button" parent="C2/C0" unique_id=381122470]
+editor_description = "Copyrights © 2026 by Twister. All rights reserved."
+layout_mode = 2
+tooltip_text = "This force reset all tracked symbols between sources.
+By default, this same function is called when processing a shader."
+text = "Reset Internal Data"
+
+[node name="Label" type="Label" parent="C2/C0" unique_id=815246512]
+layout_mode = 2
+tooltip_text = "As of the date this tool was launched.
+This tool is part of a larger project that still requires much more time.
+
+With your help, this progress will not have been in vain and will be available to you thank!.
+
+Report Issues/Features to github:
+https://github.com/CodeNameTwister/GDShedor"
+mouse_filter = 0
+text = "By CodeNameTwister"
+horizontal_alignment = 1
+vertical_alignment = 1

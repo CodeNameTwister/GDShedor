@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://bcom5q8f24vhu"]
+
+[ext_resource type="Script" uid="uid://dqkyojjktjm6w" path="res://addons/gdshedor/components/scene/code.gd" id="1_yt5kq"]
+[ext_resource type="PackedScene" uid="uid://lh601asy3xac" path="res://addons/gdshedor/components/scene/dock.tscn" id="2_j7weq"]
+[ext_resource type="PackedScene" uid="uid://7oqpy24f2r6c" path="res://addons/gdshedor/components/scene/origin.tscn" id="3_j7weq"]
+[ext_resource type="PackedScene" uid="uid://dcpqcg5xje6q7" path="res://addons/gdshedor/components/scene/code_search.tscn" id="4_wtvss"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j7weq"]
+bg_color = Color(0.12156863, 0.12156863, 0.12156863, 1)
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_wtvss"]
+number_color = Color(0.7914748, 0.9435987, 0.7407323, 1)
+symbol_color = Color(1, 1, 1, 1)
+function_color = Color(1, 0.4392157, 0.49019608, 1)
+member_variable_color = Color(0.8, 0.36862746, 0.40784314, 1)
+keyword_colors = {
+"bool": Color(0.29411766, 0.654902, 1, 1),
+"bvec2": Color(0.29411766, 0.654902, 1, 1),
+"bvec3": Color(0.29411766, 0.654902, 1, 1),
+"bvec4": Color(0.29411766, 0.654902, 1, 1),
+"const": Color(1, 0.4392157, 0.49019608, 1),
+"float": Color(0.29411766, 0.654902, 1, 1),
+"fragment": Color(1, 0.4392157, 0.49019608, 1),
+"greaterThan": Color(1, 0.4392157, 0.49019608, 1),
+"greaterThanEqual": Color(1, 0.4392157, 0.49019608, 1),
+"in": Color(1, 0.4392157, 0.49019608, 1),
+"inout": Color(1, 0.4392157, 0.49019608, 1),
+"instance": Color(1, 0.4392157, 0.49019608, 1),
+"int": Color(0.29411766, 0.654902, 1, 1),
+"isampler2D": Color(0.29411766, 0.654902, 1, 1),
+"ivec2": Color(0.29411766, 0.654902, 1, 1),
+"ivec3": Color(0.29411766, 0.654902, 1, 1),
+"ivec4": Color(0.29411766, 0.654902, 1, 1),
+"lessThan": Color(1, 0.4392157, 0.49019608, 1),
+"lessThanEqual": Color(1, 0.4392157, 0.49019608, 1),
+"light": Color(1, 0.4392157, 0.49019608, 1),
+"mat2": Color(0.29411766, 0.654902, 1, 1),
+"mat3": Color(0.29411766, 0.654902, 1, 1),
+"mat4": Color(0.29411766, 0.654902, 1, 1),
+"out": Color(1, 0.4392157, 0.49019608, 1),
+"render_mode": Color(1, 0.4392157, 0.49019608, 1),
+"sampler2D": Color(0.29411766, 0.654902, 1, 1),
+"sampler3D": Color(0.29411766, 0.654902, 1, 1),
+"samplerCube": Color(0.29411766, 0.654902, 1, 1),
+"shader_type": Color(1, 0.4392157, 0.49019608, 1),
+"texture": Color(1, 0.4392157, 0.49019608, 1),
+"uint": Color(0.29411766, 0.654902, 1, 1),
+"uniform": Color(1, 0.4392157, 0.49019608, 1),
+"usampler2D": Color(0.29411766, 0.654902, 1, 1),
+"uvec2": Color(0.29411766, 0.654902, 1, 1),
+"uvec3": Color(0.29411766, 0.654902, 1, 1),
+"uvec4": Color(0.29411766, 0.654902, 1, 1),
+"varying": Color(1, 0.4392157, 0.49019608, 1),
+"vec2": Color(0.29411766, 0.654902, 1, 1),
+"vec3": Color(0.29411766, 0.654902, 1, 1),
+"vec4": Color(0.29411766, 0.654902, 1, 1),
+"vertex": Color(1, 0.4392157, 0.49019608, 1),
+"void": Color(1, 0.4392157, 0.49019608, 1)
+}
+color_regions = {
+"/* */": Color(0.47843137, 0.56078434, 0.6156863, 1),
+"//": Color(0.47843137, 0.56078434, 0.6156863, 1)
+}
+
+[node name="Window" type="Window" unique_id=243938383 node_paths=PackedStringArray("origin", "processed", "copy", "select", "process", "close")]
+oversampling_override = 1.0
+initial_position = 4
+size = Vector2i(1092, 614)
+script = ExtResource("1_yt5kq")
+origin = NodePath("CD/HBoxContainer/VB/HS/origin")
+processed = NodePath("CD/HBoxContainer/VB/HS/origin2")
+copy = NodePath("CD/HBoxContainer/VB/VC/VG/copy")
+select = NodePath("CD/HBoxContainer/VB/VC/VG/select")
+process = NodePath("CD/HBoxContainer/VB/VC/VG/process")
+close = NodePath("CD/HBoxContainer/VB/VC/close")
+
+[node name="CD" type="PanelContainer" parent="." unique_id=18488821]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j7weq")
+
+[node name="HBoxContainer" type="HSplitContainer" parent="CD" unique_id=1463343134]
+layout_mode = 2
+split_offsets = PackedInt32Array(200)
+split_offset = 200
+
+[node name="GDShedor2" parent="CD/HBoxContainer" unique_id=377056684 instance=ExtResource("2_j7weq")]
+layout_mode = 2
+
+[node name="C0" parent="CD/HBoxContainer/GDShedor2/C2/C0" parent_id_path=PackedInt32Array(377056684, 1037518893) index="0" unique_id=877828041]
+visible = false
+
+[node name="C1" parent="CD/HBoxContainer/GDShedor2/C2/C0" parent_id_path=PackedInt32Array(377056684, 1037518893) index="1" unique_id=1449786622]
+visible = false
+
+[node name="C37" parent="CD/HBoxContainer/GDShedor2/C2/C0" parent_id_path=PackedInt32Array(377056684, 1037518893) index="34" unique_id=1114450299]
+button_pressed = true
+
+[node name="C41" parent="CD/HBoxContainer/GDShedor2/C2/C0" parent_id_path=PackedInt32Array(377056684, 1037518893) index="40" unique_id=381122470]
+tooltip_text = "This button force remove all symbols loaded between sources."
+
+[node name="VB" type="VBoxContainer" parent="CD/HBoxContainer" unique_id=53412773]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HS" type="GridContainer" parent="CD/HBoxContainer/VB" unique_id=1043033103]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="L1" type="Label" parent="CD/HBoxContainer/VB/HS" unique_id=453480083]
+layout_mode = 2
+text = "Current File"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L2" type="Label" parent="CD/HBoxContainer/VB/HS" unique_id=1389357271]
+layout_mode = 2
+text = "Processed Code"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="origin" parent="CD/HBoxContainer/VB/HS" unique_id=233017802 node_paths=PackedStringArray("source_code_search") instance=ExtResource("3_j7weq")]
+layout_mode = 2
+source_code_search = NodePath("../CodeSearch")
+
+[node name="origin2" parent="CD/HBoxContainer/VB/HS" unique_id=700228733 node_paths=PackedStringArray("source_code_search") instance=ExtResource("3_j7weq")]
+layout_mode = 2
+syntax_highlighter = SubResource("CodeHighlighter_wtvss")
+source_code_search = NodePath("../CodeSearch2")
+
+[node name="CodeSearch" parent="CD/HBoxContainer/VB/HS" unique_id=1108969963 node_paths=PackedStringArray("code_edit") instance=ExtResource("4_wtvss")]
+visible = false
+layout_mode = 2
+code_edit = NodePath("../origin")
+
+[node name="CodeSearch2" parent="CD/HBoxContainer/VB/HS" unique_id=1693438849 node_paths=PackedStringArray("code_edit") instance=ExtResource("4_wtvss")]
+visible = false
+layout_mode = 2
+code_edit = NodePath("../origin2")
+
+[node name="VC" type="VBoxContainer" parent="CD/HBoxContainer/VB" unique_id=1617235663]
+layout_mode = 2
+
+[node name="VG" type="HBoxContainer" parent="CD/HBoxContainer/VB/VC" unique_id=1807564522]
+layout_mode = 2
+
+[node name="select" type="Button" parent="CD/HBoxContainer/VB/VC/VG" unique_id=291944089]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "SELECT FILE"
+
+[node name="process" type="Button" parent="CD/HBoxContainer/VB/VC/VG" unique_id=1659913864]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "UPDATE"
+
+[node name="copy" type="Button" parent="CD/HBoxContainer/VB/VC/VG" unique_id=2080016833]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "COPY"
+
+[node name="close" type="Button" parent="CD/HBoxContainer/VB/VC" unique_id=1313027648]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "CLOSE"
+
+[editable path="CD/HBoxContainer/GDShedor2"]

@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://7oqpy24f2r6c"]
+
+[ext_resource type="Script" uid="uid://bjcuxdro4uex0" path="res://addons/gdshedor/components/scene/origin.gd" id="1_agd4d"]
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_kc2pi"]
+number_color = Color(0.7914748, 0.9435987, 0.7407323, 1)
+symbol_color = Color(1, 1, 1, 1)
+function_color = Color(1, 0.4392157, 0.49019608, 1)
+member_variable_color = Color(0.8, 0.36862746, 0.40784314, 1)
+keyword_colors = {
+"bool": Color(0.29411766, 0.654902, 1, 1),
+"bvec2": Color(0.29411766, 0.654902, 1, 1),
+"bvec3": Color(0.29411766, 0.654902, 1, 1),
+"bvec4": Color(0.29411766, 0.654902, 1, 1),
+"const": Color(1, 0.4392157, 0.49019608, 1),
+"float": Color(0.29411766, 0.654902, 1, 1),
+"fragment": Color(1, 0.4392157, 0.49019608, 1),
+"greaterThan": Color(1, 0.4392157, 0.49019608, 1),
+"greaterThanEqual": Color(1, 0.4392157, 0.49019608, 1),
+"in": Color(1, 0.4392157, 0.49019608, 1),
+"inout": Color(1, 0.4392157, 0.49019608, 1),
+"instance": Color(1, 0.4392157, 0.49019608, 1),
+"int": Color(0.29411766, 0.654902, 1, 1),
+"isampler2D": Color(0.29411766, 0.654902, 1, 1),
+"ivec2": Color(0.29411766, 0.654902, 1, 1),
+"ivec3": Color(0.29411766, 0.654902, 1, 1),
+"ivec4": Color(0.29411766, 0.654902, 1, 1),
+"lessThan": Color(1, 0.4392157, 0.49019608, 1),
+"lessThanEqual": Color(1, 0.4392157, 0.49019608, 1),
+"light": Color(1, 0.4392157, 0.49019608, 1),
+"mat2": Color(0.29411766, 0.654902, 1, 1),
+"mat3": Color(0.29411766, 0.654902, 1, 1),
+"mat4": Color(0.29411766, 0.654902, 1, 1),
+"out": Color(1, 0.4392157, 0.49019608, 1),
+"render_mode": Color(1, 0.4392157, 0.49019608, 1),
+"sampler2D": Color(0.29411766, 0.654902, 1, 1),
+"sampler3D": Color(0.29411766, 0.654902, 1, 1),
+"samplerCube": Color(0.29411766, 0.654902, 1, 1),
+"shader_type": Color(1, 0.4392157, 0.49019608, 1),
+"texture": Color(1, 0.4392157, 0.49019608, 1),
+"uint": Color(0.29411766, 0.654902, 1, 1),
+"uniform": Color(1, 0.4392157, 0.49019608, 1),
+"usampler2D": Color(0.29411766, 0.654902, 1, 1),
+"uvec2": Color(0.29411766, 0.654902, 1, 1),
+"uvec3": Color(0.29411766, 0.654902, 1, 1),
+"uvec4": Color(0.29411766, 0.654902, 1, 1),
+"varying": Color(1, 0.4392157, 0.49019608, 1),
+"vec2": Color(0.29411766, 0.654902, 1, 1),
+"vec3": Color(0.29411766, 0.654902, 1, 1),
+"vec4": Color(0.29411766, 0.654902, 1, 1),
+"vertex": Color(1, 0.4392157, 0.49019608, 1),
+"void": Color(1, 0.4392157, 0.49019608, 1)
+}
+color_regions = {
+"/* */": Color(0.47843137, 0.56078434, 0.6156863, 1),
+"//": Color(0.47843137, 0.56078434, 0.6156863, 1)
+}
+
+[node name="origin" type="CodeEdit" unique_id=233017802]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 12
+drag_and_drop_selection_enabled = false
+minimap_draw = true
+caret_blink = true
+caret_multiple = false
+syntax_highlighter = SubResource("CodeHighlighter_kc2pi")
+highlight_current_line = true
+line_folding = true
+gutters_draw_bookmarks = true
+gutters_draw_executing_lines = true
+gutters_draw_line_numbers = true
+gutters_draw_fold_gutter = true
+script = ExtResource("1_agd4d")
