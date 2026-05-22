@@ -5,9 +5,7 @@ GDShedor is a tool for Godot that allows you to obfuscate shader code created by
 
 This repository exists to validate the authority of its developers and to address new issues and functionalities for its customers.
 
-Downloadable in: [itch.io](https://codenametwister.itch.io/gdshedor)
-
-Ko-fi Blog: [Initial Post](https://ko-fi.com/post/Godot-GDShader-Obfuscator-A4B21ZS2QP)
+Downloadable in [Releases](https://github.com/CodeNameTwister/GDShedor/releases)
 
 
 
